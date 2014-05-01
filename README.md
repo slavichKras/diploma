@@ -1,0 +1,4 @@
+diploma
+=======
+
+My diploma project
