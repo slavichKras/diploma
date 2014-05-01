@@ -1,0 +1,32 @@
+{
+	"app": {
+        "host": "localhost",
+        "port": 80,
+        "schema": "http",
+        "url": "http://domain.tld"
+    },
+
+	
+	"database" : {
+		"hostname" : "localhost",
+		"port" : "3306",
+		"user" : "root",
+		"password" : "334602",
+		"name" : "documents"
+	},
+	
+	"session": {
+        "secret": "it:demo:secret",
+        "key": "sid",
+        "cookie": {
+            "path": "/",
+            "httpOnly": true,
+            "maxAge": null
+        }
+    },
+
+    "memcached": {
+        "hosts": ["127.0.0.1:11211"],
+        "prefix": "it:demo:023:"
+    }
+}
