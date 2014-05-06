@@ -1,7 +1,21 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title= 'Система автоматизации документооборота'
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/cupertino/jquery-ui-1.10.4.custom.css')
+    script(type='text/javascript', src='/js/json.js')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js')
   body
-    block content
+    div#container
+      div#header
+        ul
+          li
+            h1
+              a(href='/') Система автоматизации документооборота
+          - if (typeof currentUser !== 'undefined')
+            li.right
+              a.destroy(href='/sessions') Выйти
+      != body
+    script(type='text/javascript', src='/js/application.js')

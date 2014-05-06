@@ -1,0 +1,8 @@
+h2 Вход в систему
+p
+  a.button(href='/users/new') Зарегистрироваться
+form(method='post', action='/sessions')
+  include ../partials/users/fields
+  div
+    input(type='submit', value='Войти')
+

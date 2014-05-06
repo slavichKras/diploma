@@ -1,0 +1,9 @@
+h2 Регистрация нового пользователя
+
+form(method='post', action='/users')
+  include ../partials/users/fields 
+  div
+    input(type='submit' value='Зарегистрироваться')
+    span \ or 
+      a(href='/sessions/new') Войти
+

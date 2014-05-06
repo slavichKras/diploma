@@ -1,10 +1,9 @@
 /**
  * New node file
  */
+var index = require("../controllers/index");
+var auth = require('../lib/authenticated');
+
 module.exports = function (app) {
-    app.get('/', function (req, res) {
-        res.render('index', {
-            user: req.user
-        });
-    });
+    app.get('/', auth, index.index);
 };

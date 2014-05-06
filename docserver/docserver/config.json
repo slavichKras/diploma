@@ -12,7 +12,8 @@
 		"port" : "3306",
 		"user" : "root",
 		"password" : "334602",
-		"name" : "documents"
+		"name" : "documents",
+		"charser" : "UTF8_GENERAL_CI"
 	},
 	
 	"session": {

@@ -13,6 +13,7 @@
     "mysql" : "*",
     "connect-flash": "*",
     "connect-memcached": "*",
-    "nconf" : "*" 
+    "nconf" : "*", 
+    "crypto" : "*"
   }
 }
